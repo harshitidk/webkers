@@ -1,0 +1,30 @@
+@import './variable';
+
+.top-body
+{
+    height: 1000px;
+    padding: 10px 50px;
+    background-image: url('assets/images/img2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.mid-work
+{
+    display: flex;
+    height: 400px;
+    position: relative;
+
+    &-div
+    {
+        background-color: black;
+        height: 100%;
+        width: 100%;
+        margin: 0px 10px;
+    }
+
+    &-brand
+    {
+    }
+}
