@@ -2,10 +2,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Licorice&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-body, * {
+body {
   margin: 0px;
   padding: 0px;
   font-family: "Poppins", sans-serif;
+  background-image: url("assets/images/tree-img.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins", sans-serif;
+  color: white;
 }
 
 .top {
@@ -19,6 +30,7 @@ body, * {
       -ms-flex-align: center;
           align-items: center;
   padding: 30px 50px;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .list ul li {
@@ -29,12 +41,12 @@ body, * {
 }
 
 .list ul li:hover {
-  color: #2C5F2D;
+  color: grey;
   cursor: pointer;
 }
 
 .list ul li span {
-  border: solid 1px black;
+  border: solid 1px #184A45FF;
   padding: 10px 30px;
   border-radius: 10px;
   -webkit-transition: all 0.3s ease 0s;
@@ -42,22 +54,22 @@ body, * {
 }
 
 .list ul li span:hover {
-  background-color: #97BC62FF;
+  background-color: #184A45FF;
   color: white;
-  border-color: #97BC62FF;
-  -webkit-box-shadow: 0px 0px 10px #97BC62FF;
-          box-shadow: 0px 0px 10px #97BC62FF;
+  border-color: #184A45FF;
+  -webkit-box-shadow: 0px 0px 10px #184A45FF;
+          box-shadow: 0px 0px 10px #184A45FF;
 }
 
 .logo {
-  color: white;
   font-size: 35px;
   letter-spacing: 2px;
   font-family: "Montserrat", sans-serif;
+  text-shadow: 1px 1px 2px black;
 }
 
 .logo-web {
-  background-color: #97BC62FF;
+  background-color: #184A45FF;
   padding: 5px 0px;
   padding-left: 60px;
   font-size: 37px;
@@ -65,7 +77,7 @@ body, * {
 }
 
 .logo-kers {
-  color: #2C5F2D;
+  color: #184A45FF;
   font-weight: bold;
 }
 
@@ -80,7 +92,7 @@ body, * {
 .bur {
   width: 25px;
   height: 4px;
-  background-color: #2C5F2D;
+  background-color: #184A45FF;
   margin: 4px 0px;
 }
 
@@ -95,7 +107,9 @@ body, * {
     position: absolute;
     top: 115px;
     height: 360px;
-    right: 40px;
+    right: 0;
+    background-color: #184A45FF;
+    width: 200px;
   }
   .list ul li {
     display: list-item;
@@ -108,9 +122,10 @@ body, * {
     border: none;
   }
   .list ul li span:hover {
-    background-color: white;
+    background-color: #184A45FF;
     -webkit-box-shadow: none;
             box-shadow: none;
+    color: grey;
   }
   .list-links {
     -webkit-transform: translateX(160%);
@@ -147,6 +162,29 @@ body, * {
       -webkit-transform: translateX(0);
               transform: translateX(0);
     }
+  }
+}
+
+@media (max-width: 1200px) and (max-width: 600px) {
+  .logo {
+    font-size: 25px;
+  }
+  .logo-web {
+    background-color: #184A45FF;
+    padding: 5px 0px;
+    padding-left: 60px;
+    font-size: 27px;
+    font-weight: 500;
+  }
+  .logo-kers {
+    color: #184A45FF;
+    font-weight: bold;
+  }
+  .bur {
+    width: 22px;
+    height: 3px;
+    background-color: #184A45FF;
+    margin: 4px 0px;
   }
 }
 /*# sourceMappingURL=nav.css.map */

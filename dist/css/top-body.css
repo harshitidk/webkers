@@ -3,26 +3,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 .top-body {
-  height: 1000px;
   padding: 10px 50px;
-  background-image: url("assets/images/img2.jpg");
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.mid-work {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 400px;
-  position: relative;
-}
-
-.mid-work-div {
-  background-color: black;
-  height: 100%;
-  width: 100%;
-  margin: 0px 10px;
 }
 /*# sourceMappingURL=top-body.css.map */

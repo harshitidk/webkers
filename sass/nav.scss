@@ -1,10 +1,22 @@
 @import './variable';
 
-body , *
+body 
 {
     margin: 0px;
     padding: 0px;
     font-family: $mainf;
+    background-image: url('assets/images/tree-img.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+    font-family: $mainf;
+    color: white;
 }
 
 .top
@@ -13,6 +25,7 @@ body , *
     justify-content: space-between;
     align-items: center;
     padding: 30px 50px;
+    background-color: rgba($color: black, $alpha: .6);
 }
 
 .list ul li
@@ -23,37 +36,37 @@ body , *
 
     &:hover
     {
-        color: $col5;
+        color: grey;
         cursor: pointer;
     }
 
     span 
     {
-        border: solid 1px black;
+        border: solid 1px $col3;
         padding: 10px 30px;
         border-radius: 10px;
         transition: all 0.3s ease 0s;
 
         &:hover
         {
-            background-color: $col6;
+            background-color: $col3;
             color: white;
-            border-color: $col6;
-            box-shadow: 0px 0px 10px $col6;
+            border-color: $col3;
+            box-shadow: 0px 0px 10px $col3;
         }
     }
 }
 
 .logo
 {
-    color: white;
     font-size: 35px;
     letter-spacing: 2px;
     font-family: $montf;
+    text-shadow: 1px 1px 2px black;
 
     &-web
     {
-        background-color: $col6;
+        background-color: $col3;
         padding: 5px 0px;
         padding-left: 60px;
         font-size: 37px;
@@ -62,7 +75,7 @@ body , *
 
     &-kers
     {
-        color: $col5;
+        color: $col3;
         font-weight: bold;
     }
 }
@@ -81,12 +94,13 @@ body , *
 {
     width: 25px;
     height: 4px;
-    background-color: $col5;
+    background-color: $col3;
     margin: 4px 0px;
 }
 
 @media (max-width: 1200px)
 {
+
     body 
     {
         overflow-x: hidden;
@@ -103,7 +117,9 @@ body , *
         // left: 0;
         top: 115px;
         height: 360px;
-        right: 40px;
+        right: 0;
+        background-color: $col3;
+        width: 200px;
     }
 
     .list ul li 
@@ -120,8 +136,9 @@ body , *
 
             &:hover
             {
-                background-color: white ;
+                background-color: $col3;
                 box-shadow: none;
+                color: grey;
             }
         }
     }
@@ -149,6 +166,37 @@ body , *
         {
             opacity: 1;
             transform: translateX(0);
+        }
+    }
+
+    @media (max-width:600px)
+    {
+        .logo
+        {
+            font-size: 25px;
+        
+            &-web
+            {
+                background-color: $col3;
+                padding: 5px 0px;
+                padding-left: 60px;
+                font-size: 27px;
+                font-weight: 500;
+            }
+        
+            &-kers
+            {
+                color: $col3;
+                font-weight: bold;
+            }
+        }
+        
+        .bur
+        {   
+            width: 22px;
+            height: 3px;
+            background-color: $col3;
+            margin: 4px 0px;
         }
     }
 }
