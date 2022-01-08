@@ -2,5 +2,49 @@
 
 .top-body
 {
-    padding: 10px 50px;
+    padding: 0px 50px;
+    padding-top: 100px;
+}
+
+.top-head
+{
+    text-align: center;
+    text-shadow: 1px 1px 4px black;
+
+    &-1
+    {
+        font-weight: bold;
+        font-size: 80px;
+        letter-spacing: 1px;
+        color: white;
+        word-spacing: 4px;
+        font-family: $cursivef;
+        text-shadow: 0px 0px 20px $col3;
+    }
+}
+
+.top-btn
+{
+    width: 180px;
+    height: 50px;
+    margin: auto;
+    margin-top: 50px;
+    // border: solid 1px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $curvef;
+    font-size: 20px;
+    text-shadow: 0px 0px 4px black;
+    background-color: rgba($color: rgb(255,255,255), $alpha: .1);
+    transition: all 0.3s ease 0s;
+    box-shadow: 0px 0px 50px rgba($color: rgb(255, 255, 255) $alpha: .5);
+
+    // &:hover
+    // {
+    //     cursor: pointer;
+    //     width: 220px;
+    //     background-color: black;
+    //     text-shadow: 0px 0px 10px $col3;
+    // }
 }
